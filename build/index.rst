@@ -44,11 +44,12 @@ Part 1: Deep Learning Fundamentals
 
    chapter02_supervised-learning/linear-regression-scratch
    chapter02_supervised-learning/linear-regression-gluon
-   chapter02_supervised-learning/perceptron
+   chapter02_supervised-learning/logistic-regression-gluon
    chapter02_supervised-learning/softmax-regression-scratch
    chapter02_supervised-learning/softmax-regression-gluon
    chapter02_supervised-learning/regularization-scratch
    chapter02_supervised-learning/regularization-gluon
+   chapter02_supervised-learning/perceptron
    chapter02_supervised-learning/environment
 
 .. toctree::
@@ -92,8 +93,18 @@ Part 1: Deep Learning Fundamentals
    :caption: Optimization
 
    chapter06_optimization/optimization-intro
-   chapter06_optimization/gd-sgd
-   chapter06_optimization/sgd-momentum.ipynb
+   chapter06_optimization/gd-sgd-scratch
+   chapter06_optimization/gd-sgd-gluon
+   chapter06_optimization/momentum-scratch
+   chapter06_optimization/momentum-gluon
+   chapter06_optimization/adagrad-scratch
+   chapter06_optimization/adagrad-gluon
+   chapter06_optimization/rmsprop-scratch
+   chapter06_optimization/rmsprop-gluon
+   chapter06_optimization/adadelta-scratch
+   chapter06_optimization/adadelta-gluon
+   chapter06_optimization/adam-scratch
+   chapter06_optimization/adam-gluon
 
 .. toctree::
    :glob:
@@ -105,6 +116,7 @@ Part 1: Deep Learning Fundamentals
    chapter07_distributed-learning/multiple-gpus-gluon
    chapter07_distributed-learning/training-with-multiple-machines
    
+
 
 Part 2: Applications
 ====================
@@ -131,8 +143,23 @@ Part 2: Applications
 
    chapter11_recommender-systems/intro-recommender-systems   
 
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :caption: Time series
+
+   chapter12_time-series/lds-scratch   
+   chapter12_time-series/issm-scratch
+
 Part 3: Advanced Topics
 =======================
+
+.. toctree:: Unsupervised Learning
+   :glob:
+   :maxdepth: 1
+   :caption: High-performance and distributed training
+
+   chapter13_unsupervised-learning/vae-gluon
 
 .. toctree::
    :glob:
@@ -150,7 +177,7 @@ Part 3: Advanced Topics
    :caption: Variational methods
 
    chapter18_variational-methods-and-uncertainty/bayes-by-backprop.ipynb
-
+   chapter18_variational-methods-and-uncertainty/bayes-by-backprop-gluon.ipynb
 
 
 .. toctree::

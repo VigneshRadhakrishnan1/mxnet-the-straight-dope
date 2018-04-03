@@ -19,21 +19,21 @@ for free in its entirety. While the book has a few primary authors to set the
 tone and shape the content, we welcome contributions from the community and hope
 to coauthor chapters and entire sections with experts and community members.
 Already we've received contributions spanning typo corrections through full
-working examples.  
+working examples.
 
 ## Implementation with Apache MXNet
 Throughout this book,
 we rely upon MXNet to teach core concepts, advanced topics, and a full
 complement of applications. MXNet is widely used in production environments
 owing to its strong reputation for speed. Now with ``gluon``, MXNet's new
-imperative interface (alpha), doing research in MXNet is easy. 
+imperative interface (alpha), doing research in MXNet is easy.
 
 ## Dependencies
 To run these notebooks, you'll want to build MXNet from source. Fortunately,
 this is easy (especially on Linux) if you follow [these
 instructions](http://mxnet.io/get_started/install.html). You'll also want to
 [install Jupyter](http://jupyter.readthedocs.io/en/latest/install.html) and use
-Python 3 (because it's 2017). 
+Python 3 (because it's 2017).
 
 ## Slides
 
@@ -45,12 +45,12 @@ Contribute there if you'd like to share tutorials or course material based on
 this books.
 
 ## Translation
-As we write the book, large stable sections are simultaneously being translated into 中文, 
+As we write the book, large stable sections are simultaneously being translated into 中文,
 available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http://zh.gluon.ai/).
 
-## Table of contents 
+## Table of contents
 
-### Part 1: Deep Learning Fundamentals 
+### Part 1: Deep Learning Fundamentals
 * **Chapter 1:** Crash course
     * [Preface](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/preface.ipynb)
     * [Introduction](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter01_crashcourse/introduction.ipynb)
@@ -62,14 +62,15 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
 * **Chapter 2:** Introduction to supervised learning
     * [Linear regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/linear-regression-scratch.ipynb)
     * [Linear regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/linear-regression-gluon.ipynb)
-    * [Perceptron and SGD primer](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/perceptron.ipynb)
+    * [Binary classification with logistic regression *(``gluon`` w bespoke loss function)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/logistic-regression-gluon.ipynb)
     * [Multiclass logistic regression *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/softmax-regression-scratch.ipynb)
     * [Multiclass logistic regression *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/softmax-regression-gluon.ipynb)
     * [Overfitting and regularization *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/regularization-scratch.ipynb)
      * [Overfitting and regularization *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/regularization-gluon.ipynb)
+     * [Perceptron and SGD primer](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/perceptron.ipynb)
      * [Learning environments](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter02_supervised-learning/environment.ipynb)
 
-* **Chapter 3:** Deep neural networks (DNNs) 
+* **Chapter 3:** Deep neural networks (DNNs)
     * [Multilayer perceptrons *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/mlp-scratch.ipynb)
     * [Multilayer perceptrons *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/mlp-gluon.ipynb)
     * [Dropout regularization *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter03_deep-neural-networks/mlp-dropout-scratch.ipynb)
@@ -80,7 +81,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * Advanced Data IO
     * Debugging your neural networks
 
-* **Chapter 4:** Convolutional neural networks (CNNs) 
+* **Chapter 4:** Convolutional neural networks (CNNs)
      * [Convolutional neural networks *(from scratch)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/cnn-scratch.ipynb)
      * [Convolutional neural networks *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/cnn-gluon.ipynb)
      * [Introduction to deep CNNs (AlexNet)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter04_convolutional-neural-networks/deep-cnns-alexnet.ipynb)
@@ -99,24 +100,29 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
 
 * **Chapter 6:** Optimization
     * [Introduction to optimization](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/optimization-intro.ipynb)
-    * [Gradient descent and stochastic gradient descent](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/gd-sgd.ipynb)
-    * [SGD with Momentum](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/sgd-momentum.ipynb)
-    * ***Roadmap*** AdaGrad
-    * ***Roadmap*** RMSProp
-    * ***Roadmap*** Adam 
-    * ***Roadmap*** AdaDelta
-    * ***Roadmap*** SGLD / SGHNT
+    * [Gradient descent and stochastic gradient descent from scratch](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/gd-sgd-scratch.ipynb)
+    * [Gradient descent and stochastic gradient descent with `gluon`](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/gd-sgd-gluon.ipynb)
+    * [Momentum from scratch](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/momentum-scratch.ipynb)
+    * [Momentum with `gluon`](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/momentum-gluon.ipynb)
+    * [Adagrad from scratch](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/adagrad-scratch.ipynb)
+    * [Adagrad with `gluon`](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/adagrad-gluon.ipynb)
+    * [RMSprop from scratch](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/rmsprop-scratch.ipynb)
+    * [RMSprop with `gluon`](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/rmsprop-gluon.ipynb)
+    * [Adadelta from scratch](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/adadelta-scratch.ipynb)
+    * [Adadelta with `gluon`](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/adadelta-gluon.ipynb)
+    * [Adam from scratch](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/adam-scratch.ipynb)
+    * [Adam with `gluon`](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter06_optimization/adam-gluon.ipynb)
 
 * **Chapter 7:** Distributed & high-performance learning
     * [Fast & flexible: combining imperative & symbolic nets with HybridBlocks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/hybridize.ipynb)
-    * [Training with multiple GPUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/multiple-gpus-scratch.ipynb) 
+    * [Training with multiple GPUs (from scratch)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/multiple-gpus-scratch.ipynb)
     * [Training with multiple GPUs (with ``gluon``)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/multiple-gpus-gluon.ipynb)
     * [Training with multiple machines](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter07_distributed-learning/training-with-multiple-machines.ipynb)
     * ***Roadmap*** Asynchronous SGD
     * ***Roadmap*** Elastic SGD
 
 ### Part 2: Applications
-* **Chapter 8:** Computer vision (CV) 
+* **Chapter 8:** Computer vision (CV)
     * ***Roadmap*** Network of networks (inception & co)
     * ***Roadmap*** Residual networks
     * [Object detection](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter08_computer-vision/object-detection.ipynb)
@@ -134,10 +140,10 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Sentiment analysis
     * ***Roadmap*** Sequence-to-sequence learning (machine translation)
     * ***Roadmap*** Sequence transduction with attention (machine translation)
-    * ***Roadmap*** Named entity recognition 
+    * ***Roadmap*** Named entity recognition
     * ***Roadmap*** Image captioning
     * [Tree-LSTM for semantic relatedness](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter09_natural-language-processing/tree-lstm.ipynb)
- 
+
 * **Chapter 10:** Audio processing
     * ***Roadmap*** Intro to automatic speech recognition
     * ***Roadmap*** Connectionist temporal classification (CSC) for unaligned sequences
@@ -151,7 +157,14 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Learning from implicit feedback
 
 * **Chapter 12:** Time series
-    * ***Roadmap*** Forecasting
+    * [Introduction to Forecasting *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter12_time-series/intro-forecasting-gluon.ipynb)
+    * [Generalized Linear Models/MLP for Forecasting *(with ``gluon``)*](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter12_time-series/intro-forecasting-2-gluon.ipynb)
+    * ***Roadmap*** Factor Models for Forecasting
+    * ***Roadmap*** Recurrent Neural Network for Forecasting
+    * [Linear Dynamical System (*from scratch*) ](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter12_time-series/lds-scratch.ipynb)
+    * [Exponential Smoothing and Innovative State-space modeling (*from scratch*)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter12_time-series/issm-scratch.ipynb)
+    * ***Roadmap*** Gaussian processes for Forecasting
+    * ***Roadmap*** Bayesian Time Series Models
     * ***Roadmap*** Modeling missing data
     * ***Roadmap*** Combining static and sequential data
 
@@ -160,9 +173,9 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
    * ***Roadmap*** Introduction to autoencoders
    * ***Roadmap*** Convolutional autoencoders (introduce upconvolution)
    * ***Roadmap*** Denoising autoencoders
-   * ***Roadmap*** Variational autoencoders
+   * [Variational autoencoders](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter13_unsupervised-learning/vae-gluon.ipynb)
    * ***Roadmap*** Clustering
-   
+
 * **Chapter 14:** Generative adversarial networks (GANs)
     * [Introduction to GANs](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter14_generative-adversarial-networks/gan-intro.ipynb)
     * [Deep convolutional GANs (DCGANs)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter14_generative-adversarial-networks/dcgan.ipynb)
@@ -170,7 +183,7 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Energy-based GANS
     * ***Roadmap*** Conditional GANs
     * [Image transduction GANs (Pix2Pix)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter14_generative-adversarial-networks/pixel2pixel.ipynb)
-    * ***Roadmap*** Learning from Synthetic and Unsupervised Images 
+    * ***Roadmap*** Learning from Synthetic and Unsupervised Images
 
 * **Chapter 15:** Adversarial learning
     * ***Roadmap*** Two Sample Tests
@@ -178,26 +191,29 @@ available in a [web version](http://zh.gluon.ai/) and via [GitHub source](http:/
     * ***Roadmap*** Adversarial training
 
 * **Chapter 16:** Tensor Methods
-    * [Introduction to tensor methods](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter16_tensor_methods/tensor_basics.ipynb) 
+    * [Introduction to tensor methods](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter16_tensor_methods/tensor_basics.ipynb)
     * ***Roadmap*** Tensor decomposition
     * ***Roadmap*** Tensorized neural networks
 
 * **Chapter 17:** Deep reinforcement learning (DRL)
     * ***Roadmap*** Introduction to reinforcement learning
     * ***Roadmap*** Deep contextual bandits
-    * [Deep Q-networks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter17_deep-reinforcement-learning/DQN.ipynb)
+    * [Deep Q-networks (DQN)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter17_deep-reinforcement-learning/DQN.ipynb)
+    * [Double-DQN](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter17_deep-reinforcement-learning/DDQN.ipynb)
     * ***Roadmap*** Policy gradient
     * ***Roadmap*** Actor-critic gradient
 
 * **Chapter 18:** Variational methods and uncertainty
     * ***Roadmap*** Dropout-based uncertainty estimation (BALD)
-    * [Weight uncertainty (Bayes by Backprop)](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter18_variational-methods-and-uncertainty/bayes-by-backprop.ipynb)
+    * [Weight uncertainty (Bayes by Backprop) from scratch](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter18_variational-methods-and-uncertainty/bayes-by-backprop.ipynb)
+    * [Weight uncertainty (Bayes by Backprop) with ``gluon``](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter18_variational-methods-and-uncertainty/bayes-by-backprop-gluon.ipynb)
+    * [Weight uncertainty (Bayes by Backprop) for Recurrent Neural Networks](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/chapter18_variational-methods-and-uncertainty/bayes-by-backprop-rnn.ipynb)
     * ***Roadmap*** Variational autoencoders
 
 ### Appendices
 * Appendix 1: Cheatsheets
-    * ***Roadmap*** ``gluon`` 
-    * ***Roadmap*** PyTorch to MXNet
+    * ***Roadmap*** ``gluon``
+    * ***Roadmap*** [PyTorch to MXNet](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/cheatsheets/pytorch_gluon.md) (work in progress)
     * ***Roadmap*** Tensorflow to MXNet
     * ***Roadmap*** Keras to MXNet
     * ***Roadmap*** Math to MXNet
@@ -218,15 +234,16 @@ This evolving creature is a collaborative effort (see contributors tab). The lea
 * Aston Zhang ([@astonzhang](https://github.com/astonzhang))
 * Joshua Z. Zhang ([@zhreshold](https://github.com/zhreshold))
 * Eric Junyuan Xie ([@piiswrong](https://github.com/piiswrong))
+* Kamyar Azizzadenesheli ([@kazizzad](https://github.com/kazizzad))
 * Jean Kossaifi ([@JeanKossaifi](https://github.com/JeanKossaifi))
 * Stephan Rabanser ([@steverab](https://github.com/steverab))
 
-## Inspiration 
+## Inspiration
 In creating these tutorials, we've have drawn inspiration from some the resources that allowed us
 to learn deep / machine learning with other libraries in the past. These include:
 
 * [Soumith Chintala's *Deep Learning with PyTorch: A 60 Minute Blitz*](http://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
-* [Alec Radford's *Bare-bones intro to Theano*](https://github.com/Newmu/Theano-Tutorials) 
+* [Alec Radford's *Bare-bones intro to Theano*](https://github.com/Newmu/Theano-Tutorials)
 * [Video of Alec's intro to deep learning with Theano](https://www.youtube.com/watch?v=S75EdAcXHKk)
 * [Chris Bishop's *Pattern Recognition and Machine Learning*](https://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738)
 
